@@ -1,0 +1,32 @@
+@import './utils/variables';
+@import './utils/base';
+@import './utils/reset';
+@import './components/container';
+@import './components/page-header';
+@import './utils/placeholder';
+@import './components/logo';
+@import './components/hero';
+@import './components/section';
+@import './components/features';
+@import './components/pattern';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/filter';
+@import './components/example';
+
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[header-menu-open]'),
+//     modal: document.querySelector('[header-menu]'),
+//     modal2: document.querySelector('[close-menu]'),
+//   };
+
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+
+//   function toggleModal() {
+//       refs.modal.classList.toggle('is-hidden');
+//       refs.modal2.classList.toggle('is-open');
+//   }
+// })();

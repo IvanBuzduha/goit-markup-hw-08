@@ -1,0 +1,39 @@
+.clients {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  //   &-item:not(:first-child) {
+  //   margin-left: 30px;
+  // }
+  &-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 12 * 15px) / 6);
+    }
+  }
+}
+
+.company-link {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition: fill 250ms $time-function, border 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}

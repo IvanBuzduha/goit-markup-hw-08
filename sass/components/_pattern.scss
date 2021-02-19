@@ -1,0 +1,42 @@
+.pattern {
+  display: flex;
+  justify-content: space-between;
+  &-title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &-item {
+    display: block;
+    position: relative;
+  }
+
+  &-patern {
+    padding-top: 0;
+  }
+
+  &-item > .pattern-labe {
+    position: absolute;
+    margin: 0;
+    padding: 27px;
+    font-weight: 700;
+    line-height: 1.14em;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    transform: translate(0, -100%);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+.section-patern {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0;
+}
