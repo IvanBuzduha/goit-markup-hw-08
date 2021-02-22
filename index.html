@@ -16,35 +16,51 @@
     <!-- Шапка сайта -->
     <header class="page-header">
         <!-- Навигация -->
-        <!-- <div class="container header-container">
+        <div class="container header-container">
             <nav class="nav">
                 <a href="./index.html" class="logo link" lang="en"><span class="logo-span">Web</span>Studio</a>
-                <ul class="site-nav marker">
-                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
-                </ul>
+                <button class="menu-button " data-menu-button>                  
+                    <svg class="menu-icon" width="40" height="40">
+                        <use class="menu-open" href="./images/symbol-defs.svg#menu_header"></use>
+                        <use class="menu-close" href="./images/symbol-defs.svg#close_menu"></use>
+                    </svg>
+                </button>
+                
+                <div class="menu-container" data-menu>
+                    <ul class="site-nav marker">
+                        <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
+                        <li class="item"><a href="" class="link">Контакты</a></li>
+                    </ul>
+                
+                    <ul class="auth-nav marker">
+                        <li class="item"> 
+                            <a href="mailto:info@devstudio.com" lang="en" class="auth-nav-mail link">
+                                <div class="icon-container">     
+                                    <svg class="head-icon"  width="16" height="12">
+                                        <use href="./images/symbol-defs.svg#envelope"></use>                                               
+                                    </svg>
+                                </div> 
+                            info@devstudio.com</a>                    
+                        </li>
+                        <li class="item">                    
+                                <a href="tel:+38 096 111 11 11" class="auth-nav-tel link">
+                                    <div class="icon-container">
+                                        <svg class="head-icon" width="10" height="16">
+                                            <use href="./images/symbol-defs.svg#smartphone"></use>
+                                        </svg>
+                                    </div>
+                                +38 096 111 11 11</a></li>                    
+                    </ul>
+                    <ul class="soclink marker">
+                        <li class="soclink-item"><a href="" class="link">Instagram</a></li>
+                        <li class="soclink-item"><a href="" class="link">Twitter</a></li>
+                        <li class="soclink-item"><a href="" class="link">Facebook</a></li>
+                        <li class="soclink-item"><a href="" class="link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </nav>
-            <ul class="auth-nav marker">
-                <li class="item"> 
-                    <a href="mailto:info@devstudio.com" lang="en" class="link">
-                        <div class="icon-container">     
-                            <svg class="head-icon"  width="16" height="12">
-                                <use href="./images/symbol-defs.svg#envelope"></use>                                               
-                            </svg>
-                        </div> 
-                    info@devstudio.com</a>                    
-                </li>
-                <li class="item">                    
-                        <a href="tel:+38 096 111 11 11" class="link">
-                            <div class="icon-container">
-                                <svg class="head-icon" width="10" height="16">
-                                    <use href="./images/symbol-defs.svg#smartphone"></use>
-                                </svg>
-                            </div>
-                        +38 096 111 11 11</a></li>                    
-            </ul>
-        </div> -->
+        </div>
     </header>
     <main>
         <!-- Баннер -->
@@ -126,7 +142,17 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team marker">
                     <li class="team-member">
-                        <img src="./images/teammember1.jpg" alt="Изображение мужчины">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-1-d.jpg 1x, ./images/team/desktop/team-1-d@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tablet/team-1-t.jpg 1x, ./images/team/tablet/team-1-t@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mobile/team-1-m.jpg 1x, ./images/team/mobile/team-1-m@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/team/team-1-m.jpg" alt="Фото Игорь Демьяненко"
+                                aria-label="Игорь Демьяненко">
+                        </picture>
+                        <!-- <img src="./images/teammember1.jpg" alt="Изображение мужчины"> -->
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p class="team-content" lang="en">Product Designer</p>
                         <ul class="team-link marker">
@@ -161,7 +187,16 @@
                         </ul>
                     </li>
                     <li class="team-member">
-                        <img src="./images/teammember2.jpg" alt="Изображение женщины">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-2-d.jpg 1x, ./images/team/desktop/team-2-d@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tablet/team-2-t.jpg 1x, ./images/team/tablet/team-2-t@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mobile/team-2-m.jpg 1x, ./images/team/mobile/team-2-m@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/team/team-2-m.jpg" alt="Фото Ольга Репина" aria-label="Ольга Репина">
+                        </picture>
+                        <!-- <img src="./images/teammember2.jpg" alt="Изображение мужчины"> -->
                         <h3 class="team-title">Ольга Репина</h3>
                         <p class="team-content" lang="en">Frontend Developer</p>
                         <ul class="team-link marker">
@@ -195,7 +230,16 @@
                             </li>
                         </ul>
                     <li class="team-member">
-                        <img src="./images/teammember3.jpg" alt="Изображение мужчины">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-3-d.jpg 1x, ./images/team/desktop/team-3-d@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tablet/team-3-t.jpg 1x, ./images/team/tablet/team-3-t@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mobile/team-3-m.jpg 1x, ./images/team/mobile/team-3-m@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/team/team-3-m.jpg" alt="Фото Николай Тарасов" aria-label="Николай Тарасов">
+                        </picture>
+                        <!-- <img src="./images/teammember3.jpg" alt="Изображение мужчины"> -->
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p class="team-content" lang="en">Marketing</p>
                         <ul class="team-link marker">
@@ -230,7 +274,16 @@
                         </ul>
                     </li>
                     <li class="team-member">
-                        <img src="./images/teammember4.jpg" alt="Изображение мужчины">
+                        <picture>
+                            <source srcset="./images/team/desktop/team-4-d.jpg 1x, ./images/team/desktop/team-4-d@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/team/tablet/team-4-t.jpg 1x, ./images/team/tablet/team-4-t@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/team/mobile/team-4-m.jpg 1x, ./images/team/mobile/team-4-m@2x.jpg 2x"
+                                media="(min-width:320px)">
+                            <img src="./images/team/team-4-m.jpg" alt="Фото Михаил Ермаков" aria-label="Михаил Ермаков">
+                        </picture>
+                        <!-- <img src="./images/teammember4.jpg" alt="Изображение мужчины"> -->
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p class="team-content" lang="en">UI Designer</p>
                         <ul class="team-link marker">
@@ -440,6 +493,7 @@
             
         </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/js-speaker-form.js"></script>
     <!-- <script>

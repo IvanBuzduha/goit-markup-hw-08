@@ -74,6 +74,9 @@
     overflow: hidden;
     margin-bottom: auto;
     margin-right: auto;
+    // @media screen and (min-width: 768px) {
+    //   position: relative;
+    // }
   }
   &-link {
     &:hover .overlay,
