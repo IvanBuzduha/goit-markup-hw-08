@@ -280,6 +280,7 @@ img {
     padding: 40px;
     text-align: left;
     background-color: #ffffff;
+    min-height: 500px;
   }
 }
 
